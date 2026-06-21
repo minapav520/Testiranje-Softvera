@@ -93,14 +93,6 @@ public class WeatherCityPage extends BasePage {
         return urlValidan || kontejnerPostoji;
     }
 
-    public List<WebElement> getTenDayItems() {
-        try {
-            return driver.findElements(tenDayItems);
-        } catch (Exception e) {
-            return List.of();
-        }
-    }
-
     public boolean eachDayHasHighAndLow() {
         shortWait(2000);
 
